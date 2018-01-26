@@ -1,0 +1,535 @@
+{
+	"info": {
+		"name": "export",
+		"_postman_id": "be911461-d581-7ab6-b366-251b4e7b3098",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "templateAPI copy",
+			"description": "templateAPI is template for CARNet internal REST API\nauthor Marijan Milovec",
+			"item": [
+				{
+					"name": "GET all AUTHOR resources",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "templateAPI.dev/api/authors",
+							"host": [
+								"templateAPI",
+								"dev"
+							],
+							"path": [
+								"api",
+								"authors"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "GET AUTHOR by resource id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "templateAPI.dev/api/authors/1",
+							"host": [
+								"templateAPI",
+								"dev"
+							],
+							"path": [
+								"api",
+								"authors",
+								"1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "POST new AUTHOR resource",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "authorName",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "authorSurname",
+									"value": "Markovic",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://templateAPI.dev/api/authors",
+							"protocol": "http",
+							"host": [
+								"templateAPI",
+								"dev"
+							],
+							"path": [
+								"api",
+								"authors"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "PUT update AUTHOR resource",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "authorName",
+									"value": "TestValidacije",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "authorSurname",
+									"value": "Testvalidacije",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://templateAPI.dev/api/authors/4",
+							"protocol": "http",
+							"host": [
+								"templateAPI",
+								"dev"
+							],
+							"path": [
+								"api",
+								"authors",
+								"4"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE deletes AUTHOR resource by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://templateAPI.dev/api/authors/5",
+							"protocol": "http",
+							"host": [
+								"templateAPI",
+								"dev"
+							],
+							"path": [
+								"api",
+								"authors",
+								"5"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "GET all BOOKS resources",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "templateAPI.dev/api/books",
+							"host": [
+								"templateAPI",
+								"dev"
+							],
+							"path": [
+								"api",
+								"books"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "GET BOOK by resource id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "templateAPI.dev/api/books/1",
+							"host": [
+								"templateAPI",
+								"dev"
+							],
+							"path": [
+								"api",
+								"books",
+								"1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "POST new BOOK resource",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "bookTitle",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "ISBN",
+									"value": "Brdaric",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "publisher",
+									"value": "Test",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "numberOfPages",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "authorID",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "shelveID",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://templateAPI.dev/api/books",
+							"protocol": "http",
+							"host": [
+								"templateAPI",
+								"dev"
+							],
+							"path": [
+								"api",
+								"books"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "PUT update BOOK resource",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "bookTitle",
+									"value": "Test",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "ISBN",
+									"value": "123456-TEST",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "publisher",
+									"value": "TEST",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "numberOfPages",
+									"value": "200",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "authorID",
+									"value": "3",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "shelveID",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://templateAPI.dev/api/books/3",
+							"protocol": "http",
+							"host": [
+								"templateAPI",
+								"dev"
+							],
+							"path": [
+								"api",
+								"books",
+								"3"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE deletes BOOK resource by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://templateAPI.dev/api/books/4",
+							"protocol": "http",
+							"host": [
+								"templateAPI",
+								"dev"
+							],
+							"path": [
+								"api",
+								"books",
+								"4"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "GET all SHELVES resources",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "templateAPI.dev/api/shelves",
+							"host": [
+								"templateAPI",
+								"dev"
+							],
+							"path": [
+								"api",
+								"shelves"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "GET SHELVE by resource id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "templateAPI.dev/api/shelves/1",
+							"host": [
+								"templateAPI",
+								"dev"
+							],
+							"path": [
+								"api",
+								"shelves",
+								"1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "POST new SHELVE resource",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "shelveName",
+									"value": "",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://templateAPI.dev/api/shelves",
+							"protocol": "http",
+							"host": [
+								"templateAPI",
+								"dev"
+							],
+							"path": [
+								"api",
+								"shelves"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "PUT update SHELVE resource",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "shelveName",
+									"value": "Test1.01",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://templateAPI.dev/api/shelves/8",
+							"protocol": "http",
+							"host": [
+								"templateAPI",
+								"dev"
+							],
+							"path": [
+								"api",
+								"shelves",
+								"8"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE deletes SHELVE resource by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://templateAPI.dev/api/shelves/4",
+							"protocol": "http",
+							"host": [
+								"templateAPI",
+								"dev"
+							],
+							"path": [
+								"api",
+								"shelves",
+								"4"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
